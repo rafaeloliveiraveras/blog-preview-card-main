@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-size: 14px;
+    font-family: 'Figtree';
+    background-color: hsl(47, 88%, 63%);
+}
+
+#container-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#content {
+    box-sizing: border-box;
+    width: 320px;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+header > div#img {
+    background-image: url(assets/images/illustration-article.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+header > span {
+    display: inline-block;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+header > p {
+    font-weight: 500;
+}
+
+p {
+    padding: 15px 0px;
+}
+
+main > h1 {
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+main > p {
+    color: hsl(0, 0%, 50%);
+    line-height: 20px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+footer > img {
+    width: 40px;
+    float: left;
+}
+footer > p {
+    font-weight: 800;
+    padding: 10px 50px;
+}
+
+#container-2 {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    font-weight: 600;
+}
+
+.attribution a {
+    color: black;
+}
+
+@media screen and (min-width: 375px) {
+    #content {
+        box-shadow: 8px 8px 0px black;
+    }
+
+    .attribution {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    #content {
+        width: 370px;
+    }
+    #content:hover {
+        box-shadow: 15px 15px 0px black;
+        transition: 0.2s;
+    }
+
+    header > div#img {
+        width: 330px;
+    }
+
+    main > h1:hover {
+        color: hsl(47, 88%, 63%);
+    }
+}
